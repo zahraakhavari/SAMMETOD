@@ -1,0 +1,95 @@
+/* Grundinställningar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    font-size: 18px;
+}
+
+/* Tabellens stil */
+#conceptTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#conceptTable th,
+#conceptTable td {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#conceptTable th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+#conceptTable td {
+    background-color: #fafafa;
+}
+
+#conceptTable td:first-child {
+    font-weight: bold;
+}
+
+/* Dragbara objektens stil */
+.draggable {
+    background-color: #f9f9f9;
+    cursor: grab;
+    padding: 10px;
+    font-size: 18px;
+    margin: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    user-select: none;
+    /* Förhindrar markering av text när man drar */
+}
+
+/* Dropzoner (tabellceller där objekt kan släppas) */
+.dropzone {
+    background-color: #e9e9e9;
+    padding: 10px;
+    font-size: 18px;
+    min-height: 50px;
+}
+
+.dropzone:hover {
+    background-color: #d3f3d3;
+    /* När muspekaren är över en dropzone */
+}
+
+/* Dropzonens stil när ett objekt dras in */
+.dropzone.over {
+    background-color: #d3f3d3;
+}
+
+/* Knappar (som används för dragning) */
+.concept-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.concept-buttons button {
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
+    cursor: grab;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: background-color 0.2s ease;
+}
+
+.concept-buttons button:active {
+    background-color: #e1e1e1;
+}
+
+.concept-buttons button:focus {
+    outline: none;
+    /* Tar bort fokusramen för knapparna */
+}
+
+.concept-buttons button:hover {
+    background-color: #e9e9e9;
+}
